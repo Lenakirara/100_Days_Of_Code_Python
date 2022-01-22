@@ -59,40 +59,45 @@ itens = ("rock", "paper", "scissors")
 random_game = random.randint(0, 2)
 # print(random_game)
 
-print(f"You played {itens[choice]}")
-print(f"The computer played {itens[random_game]}")
+print(f"You played {itens[choice]}\n")
 
 if random_game == 0:
+    print(f"Computer Choose {itens[random_game]}")
+    print(f"{rock}")
     if choice == 0:
         print(f"{rock}")
         print("DRAWN!")
     elif choice == 1:
-        print(f"{rock}")
+        print(f"{paper}")
         print("YOU WIN!")
     elif choice == 2:
-        print(f"{rock}")
+        print(f"{scissors}")
         print("YOU LOST!")
 
 elif random_game == 1:
+    print(f"Computer Choose {itens[random_game]}")
+    print(f"{paper}")
     if choice == 1:
         print(f"{paper}")
         print("DRAWN!")
     elif choice == 0:
-        print(f"{paper}")
+        print(f"{rock}")
         print("YOU WIN!!")
     elif choice == 2:
-        print(f"{paper}")
+        print(f"{scissors}")
         print("YOU LOST!")
 
 elif random_game == 2:
+    print(f"Computer Choose {itens[random_game]}")
+    print(f"{scissors}")
     if choice == 2:
         print(f"{scissors}")
         print("DRAWN!")
     elif choice == 0:
-        print(f"{scissors}")
+        print(f"{rock}")
         print("YOU WIN!!")
     elif choice == 1:
-        print(f"{scissors}")
+        print(f"{paper}")
         print("YOU LOST!")
 else:
     print(
