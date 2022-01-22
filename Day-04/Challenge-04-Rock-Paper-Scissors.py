@@ -61,7 +61,7 @@ random_game = random.randint(0, 2)
 
 if choice < 0 or choice > 2:
     print(
-        "You type invalid number. Sorry! You Lost!"
+        "You type invalid number. Sorry! You Lose!"
     )
 else:
     print(f"You played {itens[choice]}\n")
@@ -77,7 +77,7 @@ else:
             print("YOU WIN!")
         elif choice == 2:
             print(f"{scissors}")
-            print("YOU LOST!")
+            print("YOU LOSE!")
 
     elif random_game == 1:
         print(f"Computer Choose {itens[random_game]}")
@@ -90,7 +90,7 @@ else:
             print("YOU WIN!!")
         elif choice == 2:
             print(f"{scissors}")
-            print("YOU LOST!")
+            print("YOU LOSE!")
 
     elif random_game == 2:
         print(f"Computer Choose {itens[random_game]}")
@@ -103,4 +103,4 @@ else:
             print("YOU WIN!!")
         elif choice == 1:
             print(f"{paper}")
-            print("YOU LOST!")
+            print("YOU LOSE!")
