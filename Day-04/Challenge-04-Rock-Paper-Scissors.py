@@ -59,47 +59,48 @@ itens = ("rock", "paper", "scissors")
 random_game = random.randint(0, 2)
 # print(random_game)
 
-print(f"You played {itens[choice]}\n")
-
-if random_game == 0:
-    print(f"Computer Choose {itens[random_game]}")
-    print(f"{rock}")
-    if choice == 0:
-        print(f"{rock}")
-        print("DRAWN!")
-    elif choice == 1:
-        print(f"{paper}")
-        print("YOU WIN!")
-    elif choice == 2:
-        print(f"{scissors}")
-        print("YOU LOST!")
-
-elif random_game == 1:
-    print(f"Computer Choose {itens[random_game]}")
-    print(f"{paper}")
-    if choice == 1:
-        print(f"{paper}")
-        print("DRAWN!")
-    elif choice == 0:
-        print(f"{rock}")
-        print("YOU WIN!!")
-    elif choice == 2:
-        print(f"{scissors}")
-        print("YOU LOST!")
-
-elif random_game == 2:
-    print(f"Computer Choose {itens[random_game]}")
-    print(f"{scissors}")
-    if choice == 2:
-        print(f"{scissors}")
-        print("DRAWN!")
-    elif choice == 0:
-        print(f"{rock}")
-        print("YOU WIN!!")
-    elif choice == 1:
-        print(f"{paper}")
-        print("YOU LOST!")
-else:
+if choice < 0 or choice > 2:
     print(
-        "Please: Type 0 for Rock, 1 for Paper or 2 for Scissors: "
+        "You type invalid number. Sorry! You Lost!"
     )
+else:
+    print(f"You played {itens[choice]}\n")
+
+    if random_game == 0:
+        print(f"Computer Choose {itens[random_game]}")
+        print(f"{rock}")
+        if choice == 0:
+            print(f"{rock}")
+            print("DRAWN!")
+        elif choice == 1:
+            print(f"{paper}")
+            print("YOU WIN!")
+        elif choice == 2:
+            print(f"{scissors}")
+            print("YOU LOST!")
+
+    elif random_game == 1:
+        print(f"Computer Choose {itens[random_game]}")
+        print(f"{paper}")
+        if choice == 1:
+            print(f"{paper}")
+            print("DRAWN!")
+        elif choice == 0:
+            print(f"{rock}")
+            print("YOU WIN!!")
+        elif choice == 2:
+            print(f"{scissors}")
+            print("YOU LOST!")
+
+    elif random_game == 2:
+        print(f"Computer Choose {itens[random_game]}")
+        print(f"{scissors}")
+        if choice == 2:
+            print(f"{scissors}")
+            print("DRAWN!")
+        elif choice == 0:
+            print(f"{rock}")
+            print("YOU WIN!!")
+        elif choice == 1:
+            print(f"{paper}")
+            print("YOU LOST!")
